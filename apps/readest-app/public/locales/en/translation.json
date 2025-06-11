@@ -4,5 +4,15 @@
   "Are you sure to delete {{count}} selected book(s)?_one": "Are you sure to delete {{count}} selected book?",
   "Are you sure to delete {{count}} selected book(s)?_other": "Are you sure to delete {{count}} selected books?",
   "Search in {{count}} Book(s)..._one": "Search in {{count}} book...",
-  "Search in {{count}} Book(s)..._other": "Search in {{count}} books..."
+  "Search in {{count}} Book(s)..._other": "Search in {{count}} books...",
+  "Saving translation settings...": "Saving translation settings...",
+  "Translation requires login": "Translation requires login",
+  "Please select a different target language": "Please select a different target language",
+  "Translation not available": "Translation not available",
+  "Target language is the same as current language": "Target language is the same as current language",
+  "Translation failed": "Translation failed",
+  "Retrying translation...": "Retrying translation...",
+  "Translating...": "Translating...",
+  "Translation failed. Showing original text.": "Translation failed. Showing original text.",
+  "Translation failed. Click to retry.": "Translation failed. Click to retry."
 }

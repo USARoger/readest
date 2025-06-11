@@ -159,7 +159,7 @@ export const DEFAULT_TTS_CONFIG: TTSConfig = {
 export const DEFAULT_TRANSLATOR_CONFIG: TranslatorConfig = {
   translationEnabled: false,
   translationProvider: 'deepl',
-  translateTargetLang: '',
+  translateTargetLang: 'en',
 };
 
 export const DEFAULT_SCREEN_CONFIG: ScreenConfig = {

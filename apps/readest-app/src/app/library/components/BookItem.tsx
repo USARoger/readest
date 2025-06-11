@@ -16,6 +16,7 @@ import { navigateToLogin } from '@/utils/nav';
 import { formatAuthors } from '@/utils/book';
 import ReadingProgress from './ReadingProgress';
 import BookCover from '@/components/BookCover';
+import TranslatableText from './TranslatableText';
 
 interface BookItemProps {
   mode: LibraryViewModeType;
@@ -92,11 +93,17 @@ const BookItem: React.FC<BookItemProps> = ({
               mode === 'list' && 'line-clamp-2 text-base',
             )}
           >
-            {book.title}
+            <TranslatableText
+              text={book.title}
+              showTranslationProvider={mode === 'list'}
+            />
           </h4>
           {mode === 'list' && (
             <p className='text-neutral-content line-clamp-1 text-sm'>
-              {formatAuthors(book.author, book.primaryLanguage) || ''}
+              <TranslatableText
+                text={formatAuthors(book.author, book.primaryLanguage) || ''}
+                showTranslationProvider={false}
+              />
             </p>
           )}
         </div>

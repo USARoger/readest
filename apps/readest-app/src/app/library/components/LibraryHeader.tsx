@@ -22,6 +22,7 @@ import Dropdown from '@/components/Dropdown';
 import SettingsMenu from './SettingsMenu';
 import ImportMenu from './ImportMenu';
 import SortMenu from './SortMenu';
+import LibraryTranslationToggler from './LibraryTranslationToggler';
 
 interface LibraryHeaderProps {
   isSelectMode: boolean;
@@ -181,6 +182,10 @@ const LibraryHeader: React.FC<LibraryHeaderProps> = ({
             >
               <ImportMenu onImportBooks={onImportBooks} />
             </Dropdown>
+            {/* 添加首页翻译功能按钮 */}
+            <div className='flex h-6 cursor-pointer justify-center'>
+              <LibraryTranslationToggler />
+            </div>
             {appService?.isMobile ? null : (
               <button
                 onClick={onToggleSelectMode}

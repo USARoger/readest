@@ -98,7 +98,7 @@ export abstract class BaseAppService implements AppService {
         ...DEFAULT_VIEW_CONFIG,
         ...DEFAULT_TTS_CONFIG,
         ...DEFAULT_SCREEN_CONFIG,
-        ...{ ...DEFAULT_TRANSLATOR_CONFIG, translateTargetLang: getTargetLang() },
+        ...DEFAULT_TRANSLATOR_CONFIG,
         ...settings.globalViewSettings,
       };
     } catch {
@@ -119,7 +119,7 @@ export abstract class BaseAppService implements AppService {
           ...DEFAULT_VIEW_CONFIG,
           ...DEFAULT_TTS_CONFIG,
           ...DEFAULT_SCREEN_CONFIG,
-          ...{ ...DEFAULT_TRANSLATOR_CONFIG, translateTargetLang: getTargetLang() },
+          ...DEFAULT_TRANSLATOR_CONFIG,
         },
       } as SystemSettings;
 
