@@ -14,5 +14,6 @@
   "Retrying translation...": "Retrying translation...",
   "Translating...": "Translating...",
   "Translation failed. Showing original text.": "Translation failed. Showing original text.",
-  "Translation failed. Click to retry.": "Translation failed. Click to retry."
+  "Translation failed. Click to retry.": "Translation failed. Click to retry.",
+  "DeepSeek": "DeepSeek"
 }
